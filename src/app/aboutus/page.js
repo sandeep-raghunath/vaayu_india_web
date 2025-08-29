@@ -1,10 +1,19 @@
-export const metadata = { title: "About Us" };
+import AboutHero from "@/components/aboutus/AboutHero";
+import QuoteSection from "@/components/aboutus/QuoteSection";
+import MissionVision from "@/components/aboutus/MissionVision";
+import Roadmap from "@/components/aboutus/Roadmap";
+import Leadership from "@/components/aboutus/Leadership";
+import CallToAction from "@/components/aboutus/CallToAction";
 
-export default function AboutUs() {
+export default function AboutPage() {
   return (
-    <section className="container py-12">
-      <h1 className="mb-4 text-3xl font-bold">About Us</h1>
-      <p className="text-gray-700">Add mission, vision, journey, founders…</p>
-    </section>
+    <div className="min-h-screen bg-white">
+      <AboutHero />
+      <QuoteSection />
+      <MissionVision />
+      <Roadmap />
+      <Leadership />
+      <CallToAction />
+    </div>
   );
 }
