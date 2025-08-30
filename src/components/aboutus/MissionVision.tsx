@@ -2,7 +2,7 @@ import React from "react";
 
 export default function MissionVision() {
   return (
-    <section className="mx-auto grid max-w-6xl overflow-hidden rounded-2xl bg-gray-100 px-6 py-16 md:grid-cols-2">
+    <section className="mx-auto mt-10 grid max-w-6xl overflow-hidden rounded-2xl bg-gray-100 px-6 md:grid-cols-2">
       <div className="p-6">
         <h3 className="mb-4 text-2xl font-semibold">Our Mission</h3>
         <p className="mb-6 text-gray-700">
