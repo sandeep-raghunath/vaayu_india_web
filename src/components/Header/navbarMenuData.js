@@ -29,7 +29,7 @@ const navbarMenuData = [
         newTab: false,
       },
       {
-        id: 41,
+        id: 42,
         title: "Media2",
         path: "/media",
         newTab: false,
