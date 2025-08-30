@@ -2,8 +2,7 @@ import React from "react";
 
 export default function Roadmap() {
   return (
-    <section className="mx-auto max-w-7xl px-6 py-16">
-      <h3 className="mb-4 text-2xl font-bold">Our Journey: The Vaayu Roadmap</h3>
+    <section className="mx-auto max-w-7xl px-16 py-16">
       <img
         src="/images/about/roadmap.png"
         alt="Vaayu Roadmap"
