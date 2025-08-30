@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export default function AboutHero() {
   return (
@@ -17,19 +18,21 @@ export default function AboutHero() {
           </p>
 
           <p className="mt-7 leading-relaxed text-gray-600">
-            At Vaayu Aircon, we don’t just cool spaces—we redefine them. We engineer next-generation
-            Hybrid AHUs (AHUs) that deliver powerful, sustainable performance while drastically
-            cutting energy and water consumption. We're leading the charge with smart, scalable tech
-            for a cooler,
+            At Vaayu Aircon, we don&apos;t just cool spaces — we redefine them. We engineer
+            next-generation Hybrid AHUs (AHUs) that deliver powerful, sustainable performance while
+            drastically cutting energy and water consumption. We&apos;re leading the charge with
+            smart, scalable tech for a cooler future.
           </p>
         </div>
       </div>
 
       {/* Image Section */}
       <div className="mt-7">
-        <img
+        <Image
           src="/images/about/team-trophy.png"
           alt="Vaayu team with awards"
+          width={1200}
+          height={700}
           className="w-full rounded-xl object-cover shadow-lg"
         />
       </div>
