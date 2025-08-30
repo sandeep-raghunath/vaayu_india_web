@@ -2,10 +2,10 @@ import React from "react";
 
 export default function Leadership() {
   return (
-    <section className="mx-auto max-w-7xl space-y-16 px-6 py-16">
+    <section className="mx-auto max-w-7xl space-y-16 px-16 py-16">
       {/* Priyanka */}
-      <div className="grid items-center gap-10 md:grid-cols-2">
-        <img src="/images/about/priyanka.jpg" alt="Dr. Priyanka Mokshmar" className="rounded-xl" />
+      <div className="grid items-center gap-1 md:grid-cols-2">
+        <img src="/images/about/priyanka.png" alt="Dr. Priyanka Mokshmar" className="rounded-xl" />
         <div>
           <h3 className="text-2xl font-bold">Dr. Priyanka Mokshmar</h3>
           <p className="text-gray-500">Founder & CMD, Vaayu Aircon</p>
@@ -15,13 +15,16 @@ export default function Leadership() {
           </p>
           <ul className="mt-3 ml-5 list-disc space-y-2 text-gray-700">
             <li>
-              <strong>Innovator:</strong> Her vision led Vaayu to win the SKOCH Award...
+              <strong>Innovator:</strong> Her vision has led Vaayu to win the SKOCH Award, be named
+              a Top 100 SME, and secure her a spot as a Top Woman in Tech.
             </li>
             <li>
-              <strong>Global Ambassador:</strong> Represents Indian ingenuity worldwide.
+              <strong>Global Ambassador:</strong> She represents Indian ingenuity on the world
+              stage.
             </li>
             <li>
-              <strong>Mentor:</strong> Igniting future for women in tech...
+              <strong>Mentor:</strong> She’s igniting the future for women in tech via platforms
+              like NITI Aayog and Goldman Sachs.
             </li>
           </ul>
         </div>
@@ -40,7 +43,7 @@ export default function Leadership() {
             a mission for sustainability...
           </p>
         </div>
-        <img src="/images/about/pranav.jpg" alt="Mr. Pranav Mokshmar" className="rounded-xl" />
+        <img src="/images/about/pranav.png" alt="Mr. Pranav Mokshmar" className="rounded-xl" />
       </div>
     </section>
   );
