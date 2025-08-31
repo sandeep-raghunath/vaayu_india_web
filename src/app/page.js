@@ -4,12 +4,12 @@ import Advantages from "@/components/home/Advantages";
 import CustomApplications from "@/components/home/CustomApplications";
 import Performance from "@/components/home/Performance";
 import Efficiency from "@/components/home/Efficiency";
-// import TraditionalCooling from "@/components/home/TraditionalCooling";
+import TraditionalCooling from "@/components/home/TraditionalCooling";
 import Impact from "@/components/home/Impact";
 import Partners from "@/components/home/Partners";
-// import WhyVaayu from "@/components/home/WhyVaayu";
-// import Testimonials from "@/components/home/Testimonials";
-// import FAQ from "@/components/home/FAQ";
+import WhyVaayu from "@/components/home/WhyVaayu";
+import Testimonials from "@/components/home/Testimonials";
+import Support from "@/components/home/Support";
 
 export default function Home() {
   return (
@@ -20,12 +20,12 @@ export default function Home() {
       <CustomApplications />
       <Performance />
       <Efficiency />
-      {/* <TraditionalCooling /> */}
+      <TraditionalCooling />
       <Impact />
       <Partners />
-      {/* <WhyVaayu /> */}
-      {/* <Testimonials /> */}
-      {/* <FAQ /> */}
+      <WhyVaayu />
+      <Testimonials />
+      <Support />
     </>
   );
 }

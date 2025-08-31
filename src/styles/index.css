@@ -15,6 +15,8 @@ layer(base);
   --color-current: currentColor;
   --color-transparent: transparent;
   --color-white: #ffffff;
+  --color-white-100: #EFF0FC;
+  --color-white-200: #F6F6F6;
   --color-black: #121723;
   --color-dark: #1d2430;
   --color-primary: #272F9B;
