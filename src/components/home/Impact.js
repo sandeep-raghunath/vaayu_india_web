@@ -22,7 +22,7 @@ export default function Impact() {
           {/* Card 1 */}
           <div className="relative overflow-hidden rounded-2xl shadow-lg">
             <Image
-              src="/images/home/impact/mushroomfarm.png"
+              src="/images/home/impact/videoThumbnail1.png"
               alt="Mushroom Farm"
               width={400}
               height={300}
@@ -30,7 +30,7 @@ export default function Impact() {
             />
             {/* Play Button */}
             <div className="absolute inset-0 flex items-center justify-center">
-              <button className="flex h-12 w-12 items-center justify-center rounded-full bg-white/70 text-gray-800 hover:bg-white">
+              <button className="flex h-12 w-12 items-center justify-center rounded-full bg-white/10 text-white backdrop-blur-2xl hover:scale-150">
                 ▶
               </button>
             </div>
@@ -43,14 +43,14 @@ export default function Impact() {
           {/* Card 2 */}
           <div className="relative overflow-hidden rounded-2xl shadow-lg">
             <Image
-              src="/images/home/impact/institute.png"
+              src="/images/home/impact/videoThumbnail2.png"
               alt="Institute"
               width={400}
               height={300}
               className="h-full w-full object-cover"
             />
             <div className="absolute inset-0 flex items-center justify-center">
-              <button className="flex h-12 w-12 items-center justify-center rounded-full bg-white/70 text-gray-800 hover:bg-white">
+              <button className="flex h-12 w-12 items-center justify-center rounded-full bg-white/10 text-white backdrop-blur-2xl hover:scale-150">
                 ▶
               </button>
             </div>
@@ -62,14 +62,14 @@ export default function Impact() {
           {/* Card 3 */}
           <div className="relative overflow-hidden rounded-2xl shadow-lg">
             <Image
-              src="/images/home/impact/showroom.png"
+              src="/images/home/impact/videoThumbnail3.png"
               alt="Showroom"
               width={400}
               height={300}
               className="h-full w-full object-cover"
             />
             <div className="absolute inset-0 flex items-center justify-center">
-              <button className="flex h-12 w-12 items-center justify-center rounded-full bg-white/70 text-gray-800 hover:bg-white">
+              <button className="flex h-12 w-12 items-center justify-center rounded-full bg-white/10 text-white backdrop-blur-2xl hover:scale-150">
                 ▶
               </button>
             </div>
