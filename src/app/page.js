@@ -8,8 +8,8 @@ import Efficiency from "@/components/home/Efficiency";
 import Impact from "@/components/home/Impact";
 import Partners from "@/components/home/Partners";
 import WhyVaayu from "@/components/home/WhyVaayu";
-// import Testimonials from "@/components/home/Testimonials";
-// import FAQ from "@/components/home/FAQ";
+import Testimonials from "@/components/home/Testimonials";
+import Support from "@/components/home/Support";
 
 export default function Home() {
   return (
@@ -24,8 +24,8 @@ export default function Home() {
       <Impact />
       <Partners />
       <WhyVaayu />
-      {/* <Testimonials /> */}
-      {/* <FAQ /> */}
+      <Testimonials />
+      <Support />
     </>
   );
 }

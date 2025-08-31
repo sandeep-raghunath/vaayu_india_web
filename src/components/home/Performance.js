@@ -6,7 +6,7 @@ export default function Performance() {
       <div className="mx-auto max-w-6xl overflow-hidden rounded-2xl shadow-sm">
         <div className="grid grid-cols-2">
           {/* Left Side - Text */}
-          <div className="flex flex-col justify-center bg-[#F6F6F6] px-10 pt-40 pb-4">
+          <div className="bg-white-200 flex flex-col justify-center px-10 pt-40 pb-4">
             <h2 className="mb-4 text-4xl leading-snug font-medium text-black">
               Performance &amp; <br /> Sustainability
             </h2>

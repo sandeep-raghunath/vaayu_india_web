@@ -30,7 +30,7 @@ export default function Partners() {
           {partners.map((partner, idx) => (
             <div
               key={idx}
-              className="flex h-[160px] w-[295px] flex-none items-center justify-center rounded-md bg-[#F6F6F6] p-6 shadow-sm"
+              className="bg-white-200 flex h-[160px] w-[295px] flex-none items-center justify-center rounded-md p-6 shadow-sm"
             >
               <Image
                 src={partner.src}
