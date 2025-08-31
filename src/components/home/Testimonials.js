@@ -67,7 +67,7 @@ export default function Testimonials() {
                   {/* Text */}
                   <div className="flex flex-col justify-center rounded-2xl border border-gray-200 bg-gray-50 p-6 md:col-span-2">
                     <h3 className="mb-3 text-base font-bold text-gray-900">{t.title}</h3>
-                    <p className="mb-4 text-gray-700">"{t.quote}"</p>
+                    <p className="mb-4 text-gray-700">&quot;{t.quote}&quot;</p>
                     <p className="text-sm font-semibold text-gray-900">{t.author}</p>
                   </div>
                 </>
@@ -76,7 +76,7 @@ export default function Testimonials() {
                   {/* Text */}
                   <div className="flex flex-col justify-center rounded-2xl border border-gray-200 bg-gray-50 p-6 md:col-span-2">
                     <h3 className="mb-3 text-base font-bold text-gray-900">{t.title}</h3>
-                    <p className="mb-4 text-gray-700">"{t.quote}"</p>
+                    <p className="mb-4 text-gray-700">&quot;{t.quote}&quot;</p>
                     <p className="text-sm font-semibold text-gray-900">{t.author}</p>
                   </div>
                   {/* Logo */}
