@@ -25,7 +25,7 @@ export default function CareerHero() {
       <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
         <div className="h-80 w-full overflow-hidden rounded-xl shadow-md">
           <Image
-            src="/images/careers/profile1.png"
+            src="/images/career/profile1.png"
             alt="Team member"
             width={400}
             height={320}
@@ -34,7 +34,7 @@ export default function CareerHero() {
         </div>
         <div className="h-80 w-full overflow-hidden rounded-xl shadow-md">
           <Image
-            src="/images/careers/team-meeting.png"
+            src="/images/career/team-meeting.png"
             alt="Team meeting"
             width={400}
             height={320}
@@ -43,7 +43,7 @@ export default function CareerHero() {
         </div>
         <div className="h-80 w-full overflow-hidden rounded-xl shadow-md">
           <Image
-            src="/images/careers/profile2.png"
+            src="/images/career/profile2.png"
             alt="Team member"
             width={400}
             height={320}
