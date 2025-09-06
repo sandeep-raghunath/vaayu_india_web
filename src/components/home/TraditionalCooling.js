@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import ProductInfoCard from "@/components/common/ProductInfoCard";
 
 export default function TraditionalCooling() {
   return (
@@ -19,77 +20,29 @@ export default function TraditionalCooling() {
         </div>
 
         {/* Card Top Right */}
-        <div className="absolute top-24 right-40 w-[360px] rounded-xl border border-gray-300 bg-white/10 p-6 shadow-lg backdrop-blur-md">
-          {/* Icon */}
-          <div className="mb-4">
-            <div className="flex h-15 w-15 items-center justify-center rounded-full bg-white">
-              <Image
-                src="/images/home/traditionalcooling/bolt.svg"
-                alt="bolt"
-                width={28}
-                height={28}
-                className="h-auto w-auto object-contain"
-              />
-            </div>
-          </div>
-
-          {/* Title */}
-          <p className="mb-6 text-sm font-medium text-white">Power Input (Watts) Per Machine</p>
-
-          {/* Values with divider */}
-          <div className="flex items-start justify-between text-white">
-            {/* Left Side */}
-            <div className="flex-1 pr-4">
-              <p className="text-4xl leading-tight font-bold">1650</p>
-              <p className="mt-1 text-sm text-white/80">Vaayu Air Cooler</p>
-            </div>
-
-            {/* Divider */}
-            <div className="h-14 w-px bg-white/40"></div>
-
-            {/* Right Side */}
-            <div className="flex-1 pl-4 text-right">
-              <p className="text-4xl leading-tight font-bold">10,000</p>
-              <p className="mt-1 text-sm text-white/80">Regular AC</p>
-            </div>
-          </div>
+        <div className="absolute top-24 right-40">
+          <ProductInfoCard
+            title="Power Input (Watts) Per Machine"
+            leftTitle="1650"
+            leftSubtitle="Vaayu Air Cooler"
+            rightTitle="10,000"
+            rightSubtitle="Regular AC"
+            icon="/images/home/traditionalcooling/bolt.svg"
+            iconAlt="bolt"
+          />
         </div>
 
         {/* Card Bottom Left */}
-        <div className="absolute bottom-16 left-60 w-[360px] rounded-xl border border-gray-300 bg-white/10 p-6 shadow-lg backdrop-blur-md">
-          {/* Icon */}
-          <div className="mb-4">
-            <div className="flex h-15 w-15 items-center justify-center rounded-full bg-white">
-              <Image
-                src="/images/home/traditionalcooling/rupee.svg"
-                alt="bolt"
-                width={28}
-                height={28}
-                className="h-auto w-auto object-contain"
-              />
-            </div>
-          </div>
-
-          {/* Title */}
-          <p className="mb-6 text-sm font-medium text-white">Monthly Bill (Approx)</p>
-
-          {/* Values with divider */}
-          <div className="flex items-start justify-between text-white">
-            {/* Left Side */}
-            <div className="flex-1 pr-4">
-              <p className="text-4xl leading-tight font-bold">3,465</p>
-              <p className="mt-1 text-sm text-white/80">Vaayu Air Cooler</p>
-            </div>
-
-            {/* Divider */}
-            <div className="h-14 w-px bg-white/40"></div>
-
-            {/* Right Side */}
-            <div className="flex-1 pl-4 text-right">
-              <p className="text-4xl leading-tight font-bold">21,000</p>
-              <p className="mt-1 text-sm text-white/80">Regular AC</p>
-            </div>
-          </div>
+        <div className="absolute bottom-16 left-60">
+          <ProductInfoCard
+            title="Monthly Bill (Approx)"
+            leftTitle="3,465"
+            leftSubtitle="Vaayu Air Cooler"
+            rightTitle="21,000"
+            rightSubtitle="Regular AC"
+            icon="/images/home/traditionalcooling/rupee.svg"
+            iconAlt="rupee"
+          />
         </div>
       </div>
     </section>

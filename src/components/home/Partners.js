@@ -44,7 +44,7 @@ export default function Partners() {
 
   return (
     <section className="relative w-full bg-white py-20">
-      <div className="mx-auto max-w-7xl">
+      <div className="mx-auto max-w-full">
         {/* Heading */}
         <div className="mb-12 max-w-3xl px-6 md:px-20">
           <h2 className="mb-4 text-4xl leading-snug font-medium text-black">The A-List Of Cool.</h2>

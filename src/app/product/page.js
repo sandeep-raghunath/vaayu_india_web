@@ -1,10 +1,24 @@
+import Support from "@/components/common/Support";
+import Testimonials from "@/components/common/Testimonials";
+import WhyVaayu from "@/components/common/WhyVaayu";
+import Features from "@/components/product/Features";
+import PowerCooling from "@/components/product/PowerCooling";
+import Questions from "@/components/product/Questions";
+import Sustainable from "@/components/product/Sustainable";
+import { WHY_VAAYU_CARD_DATA } from "@/constants/homeConstants";
+
 export const metadata = { title: "Product" };
 
-export default function ContactUs() {
+export default function Product() {
   return (
-    <section className="container py-12">
-      <h1 className="mb-4 text-3xl font-bold">Product</h1>
-      <p className="text-gray-700">Product details here!!</p>
-    </section>
+    <>
+      <PowerCooling />
+      <WhyVaayu heading="Key Benefits at a Glance" cardData={WHY_VAAYU_CARD_DATA} />
+      <Sustainable />
+      <Features />
+      <Testimonials />
+      <Questions />
+      <Support />
+    </>
   );
 }
