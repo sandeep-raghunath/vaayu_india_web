@@ -7,9 +7,10 @@ import Efficiency from "@/components/home/Efficiency";
 import TraditionalCooling from "@/components/home/TraditionalCooling";
 import Impact from "@/components/home/Impact";
 import Partners from "@/components/home/Partners";
-import WhyVaayu from "@/components/home/WhyVaayu";
-import Testimonials from "@/components/home/Testimonials";
-import Support from "@/components/home/Support";
+import WhyVaayu from "@/components/common/WhyVaayu";
+import Testimonials from "@/components/common/Testimonials";
+import Support from "@/components/common/Support";
+import { WHY_VAAYU_CARD_DATA } from "@/constants/homeConstants";
 
 export default function Home() {
   return (
@@ -23,7 +24,12 @@ export default function Home() {
       <TraditionalCooling />
       <Impact />
       <Partners />
-      <WhyVaayu />
+      <WhyVaayu
+        heading="Why Vaayu? Our Chill Changes Things."
+        description="It\'s not just about feeling cool, it\'s about protecting our world — We\'re
+            here to save resources and shrink our carbon footprint for generations to come."
+        cardData={WHY_VAAYU_CARD_DATA}
+      />
       <Testimonials />
       <Support />
     </>
