@@ -8,7 +8,17 @@ import navbarMenuData from "./navbarMenuData";
 export default function Header() {
   const pathname = usePathname();
   const [openMenu, setOpenMenu] = useState(null);
+  const [scrolled, setScrolled] = useState(false);
   const menuRef = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10); // adjust threshold if needed
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   useEffect(() => {
     function handleClickOutside(event) {
@@ -23,7 +33,11 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="fixed top-0 left-0 z-50 w-full bg-transparent">
+    <header
+      className={`fixed top-0 left-0 z-50 w-full ${
+        scrolled ? "bg-white/20 shadow-md backdrop-blur-md" : "bg-transparent"
+      }`}
+    >
       <div className="container mx-auto flex items-center justify-between px-4 py-4">
         <div className="flex items-center">
           <Link href="/">
