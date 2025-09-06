@@ -77,7 +77,7 @@ export default function Header() {
                   </svg>
                 </button>
                 {openMenu === item.id && (
-                  <div className="absolute top-full left-0 z-10 mt-2 w-40 rounded-md border bg-transparent shadow-lg">
+                  <div className="absolute top-full left-0 z-10 mt-2 w-40 rounded-md border bg-white shadow-lg">
                     {item.submenu.map((subitem) => (
                       <Link
                         key={subitem.id || subitem.title}
