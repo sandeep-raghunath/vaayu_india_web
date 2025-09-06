@@ -1,10 +1,15 @@
-export const metadata = { title: "Career" };
+import CareerHero from "@/components/Career/CareerHero";
+import CareerMission from "@/components/Career/CareerMission";
+import OpenRoles from "@/components/Career/OpenRoles";
+import CallToAction from "@/components/aboutus/CallToAction";
 
-export default function ContactUs() {
+export default function CareersPage() {
   return (
-    <section className="container py-12">
-      <h1 className="mb-4 text-3xl font-bold">Career</h1>
-      <p className="text-gray-700">Career details here!!</p>
-    </section>
+    <main>
+      <CareerHero />
+      <CareerMission />
+      <OpenRoles />
+      <CallToAction />
+    </main>
   );
 }
