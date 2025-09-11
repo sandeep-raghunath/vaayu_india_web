@@ -21,12 +21,12 @@ export default function Hero() {
     <section className="relative min-h-[92vh] overflow-hidden md:min-h-screen">
       {/* Background */}
       <div
-        className="absolute inset-0 -z-10 h-full w-full bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 -z-10 bg-cover bg-center"
         style={{ backgroundImage: "url(/images/hero/background.png)" }}
       />
       {/* Carbon Watch (right) */}
       <motion.div
-        className="absolute top-[40%] right-20 hidden -translate-y-1/2 md:right-10 md:block md:h-48 md:w-48"
+        className="absolute top-[40%] right-20 hidden -translate-y-1/2 md:block"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
@@ -38,27 +38,27 @@ export default function Hero() {
           alt="Reduce Carbon Emission by 80%"
           width={240}
           height={240}
-          className="h-auto w-full object-contain"
+          className="object-contain"
           priority
         />
       </motion.div>
       {/* Headline + CTA (center) */}
       <motion.div
-        className="relative mx-auto max-w-[1100px] px-4 pt-32 text-center sm:px-6 sm:pt-36 md:px-8 md:pt-48 lg:pt-56"
+        className="relative mx-auto max-w-[1100px] px-4 pt-36 text-center md:pt-48 lg:pt-56"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 1 }}
         variants={animationVariants}
       >
-        <h1 className="font-500 text-[28px] leading-tight text-black sm:text-[36px] md:text-[48px] lg:text-[58px]">
+        <h1 className="font-500 text-[40px] leading-tight text-black sm:text-[52px] lg:text-[58px]">
           Cool Innovation
           <br />
           Efficient <span className="font-serif italic">Sustainability</span>
         </h1>
 
         <motion.button
-          className="bg-primary mt-6 inline-flex items-center justify-center rounded-full px-4 py-2 font-semibold text-white shadow-md hover:shadow-lg sm:px-7 sm:py-3"
+          className="bg-primary mt-6 inline-flex items-center justify-center rounded-full px-7 py-3 font-semibold text-white shadow-md hover:shadow-lg"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
@@ -74,7 +74,7 @@ export default function Hero() {
 
       {/* Bottom Cards (frosted) */}
       <motion.div
-        className="absolute bottom-6 flex flex-col justify-center gap-4 px-4 sm:flex-row sm:px-6 md:px-8"
+        className="absolute bottom-6 flex h-[240px] gap-4 justify-self-center"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
@@ -82,15 +82,15 @@ export default function Hero() {
         variants={animationVariants}
       >
         {/* Card 1 */}
-        <div className="flex w-full items-center rounded-2xl border border-white/30 bg-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.15)] backdrop-blur-md sm:w-[300px] md:w-[400px] lg:w-[610px]">
+        <div className="flex w-[610px] items-center rounded-2xl border border-white/30 bg-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.15)] backdrop-blur-md">
           {/* Left Image */}
-          <div className="w-full self-center sm:w-auto">
+          <div className="self-center">
             <Image
               src="/images/hero/person1.png"
               alt="Customer enjoying cool air"
               width={320}
               height={200}
-              className="h-auto w-full object-scale-down p-2 sm:w-auto"
+              className="object-scale-down p-2"
             />
           </div>
           {/* Right Content */}
@@ -107,35 +107,35 @@ export default function Hero() {
         </div>
 
         {/* Card 2 */}
-        <div className="flex w-full flex-col justify-center rounded-2xl border border-white/30 bg-white/10 px-1 py-1 shadow-[0_10px_30px_rgba(0,0,0,0.15)] backdrop-blur-sm sm:w-[300px] md:w-[400px] lg:w-[610px]">
+        <div className="flex flex-col justify-center rounded-2xl border border-white/30 bg-white/10 px-1 py-1 shadow-[0_10px_30px_rgba(0,0,0,0.15)] backdrop-blur-sm">
           <div className="mb-4 flex -space-x-3 self-center">
             <Image
               src="/images/hero/person2.png"
               alt="avatar"
               width={60}
               height={60}
-              className="h-auto w-full rounded-full object-cover ring-1 ring-white sm:w-auto"
+              className="rounded-full object-cover ring-1 ring-white"
             />
             <Image
               src="/images/hero/person3.png"
               alt="avatar"
               width={60}
               height={60}
-              className="h-auto w-full rounded-full object-cover ring-1 ring-gray-200 sm:w-auto"
+              className="rounded-full object-cover ring-1 ring-gray-200"
             />
             <Image
               src="/images/hero/person4.png"
               alt="avatar"
               width={60}
               height={60}
-              className="h-auto w-full rounded-full object-cover ring-1 ring-gray-200 sm:w-auto"
+              className="rounded-full object-cover ring-1 ring-gray-200"
             />
             <Image
               src="/images/hero/person5.png"
               alt="avatar"
               width={60}
               height={60}
-              className="h-auto w-full rounded-full object-cover ring-1 ring-gray-200 sm:w-auto"
+              className="rounded-full object-cover ring-1 ring-gray-200"
             />
           </div>
           <div className="text-center">
@@ -152,7 +152,7 @@ export default function Hero() {
         </div>
 
         {/* Card 3 */}
-        <div className="flex w-full flex-col justify-center rounded-2xl border border-white/30 bg-white/10 px-6 py-5 shadow-[0_10px_30px_rgba(0,0,0,0.15)] backdrop-blur-sm sm:w-[300px] md:w-[400px] lg:w-[610px]">
+        <div className="flex flex-col justify-center rounded-2xl border border-white/30 bg-white/10 px-6 py-5 shadow-[0_10px_30px_rgba(0,0,0,0.15)] backdrop-blur-sm">
           <div className="text-primary mb-6 grid h-15 w-15 place-items-center rounded-full bg-white text-[12px] font-semibold">
             CO₂
           </div>
