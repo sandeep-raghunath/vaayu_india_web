@@ -17,7 +17,7 @@ export default function Performance() {
             <h2 className="mb-4 text-4xl leading-snug font-medium text-black">
               Performance &amp; <br /> Sustainability
             </h2>
-            <p className="text-lg leading-relaxed text-black">
+            <p className="text-justify text-lg leading-relaxed text-black">
               Vaayu Aircon delivers high-performance cooling engineered for exceptional energy
               efficiency. This ensures optimal comfort while significantly reducing electricity
               consumption. Committed to sustainability, the systems utilize eco-friendly

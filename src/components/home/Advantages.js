@@ -81,7 +81,7 @@ export default function Advantages() {
                 <h3 className="mb-2 text-base leading-snug font-bold text-black underline">
                   {adv.title}
                 </h3>
-                <div className="text-sm leading-relaxed text-black">
+                <div className="text-justify text-sm leading-relaxed text-black">
                   {expandedIndexes.includes(index)
                     ? adv.desc
                     : adv.desc.split(" ").slice(0, 16).join(" ") + "..."}

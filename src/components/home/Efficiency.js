@@ -36,7 +36,7 @@ export default function Efficiency() {
           <h2 className="mb-3 text-4xl leading-snug font-medium text-black">
             High Cooling Efficiency, <br /> Lower Energy Bills
           </h2>
-          <p className="mb-10 text-2xl leading-snug text-black">
+          <p className="mb-10 text-justify text-2xl leading-snug text-black">
             Experience superior comfort with Vaayu Aircon, your specialist in high-efficiency
             cooling solutions. Our advanced technology, centered around innovative Air Handling
             Units (AHUs) and Air Washers, delivers powerful cooling while significantly reducing
@@ -72,7 +72,7 @@ export default function Efficiency() {
             </li>
           </ul>
 
-          <p className="mb-4 text-sm leading-normal text-black">
+          <p className="mb-4 text-justify text-sm leading-normal text-black">
             By leveraging these systems, you can enjoy a perfectly cool environment without worrying
             about high electricity costs. Choose Vaayu Aircon for smarter cooling and enjoy
             noticeably lower energy bills

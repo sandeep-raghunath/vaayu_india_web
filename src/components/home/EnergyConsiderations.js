@@ -90,7 +90,7 @@ export default function EnergyConsiderations() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
         >
-          <p className="mb-6 text-xl leading-relaxed text-black">
+          <p className="mb-6 text-justify text-xl leading-relaxed text-black">
             At Vaayu Aircool, we create fresh air-based cooling systems that strike a balance
             between environmental responsibility, energy efficiency, and performance. Our innovative
             technology is revolutionizing what it means to effectively cool data centers, industrial
