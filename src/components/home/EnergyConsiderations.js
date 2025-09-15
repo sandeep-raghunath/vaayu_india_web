@@ -31,7 +31,7 @@ export default function EnergyConsiderations() {
   };
 
   return (
-    <section className="bg-[#FFFCF5] px-6 py-20 md:px-12">
+    <section className="bg-white px-6 py-20 md:px-12">
       <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-12 md:grid-cols-2">
         {/* Left side: Heading + Image */}
         <motion.div
