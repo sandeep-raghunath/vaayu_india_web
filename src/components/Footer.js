@@ -150,9 +150,10 @@ export default function Footer() {
           <div className="mb-3 text-white">
             International Office:
             <br />
-            503, Apollo Premiere,
+            Luniya Compound, Vaayu Global Tower,
+            <br /> behind Tata Showroom, Lasudia
             <br />
-            Vijay Nagar, Indore, MP, India
+            Mori, Indore, Madhya Pradesh 452010          
           </div>
           <div className="mb-3 text-white">
             Experience Zone:FH-196,
