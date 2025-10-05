@@ -9,6 +9,7 @@ import PowerCooling from "@/components/product/PowerCooling";
 import Questions from "@/components/product/Questions";
 import Sustainable from "@/components/product/Sustainable";
 import { WHY_VAAYU_CARD_DATA } from "@/constants/homeConstants";
+import ValueEditServices from "@/components/product/ValueEditServices";
 
 export default function Product() {
   const { openModal } = useModal();
@@ -54,6 +55,7 @@ export default function Product() {
   return (
     <>
       <PowerCooling />
+      <ValueEditServices />
       <WhyVaayu heading="Key Benefits at a Glance" cardData={WHY_VAAYU_CARD_DATA} />
       <Sustainable />
       <Features />
