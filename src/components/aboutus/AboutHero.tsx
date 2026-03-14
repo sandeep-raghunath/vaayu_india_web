@@ -36,6 +36,35 @@ export default function AboutHero() {
           className="w-full rounded-xl object-cover shadow-lg"
         />
       </div>
+
+      <div className="mt-11">
+        <div className="flex items-start">
+          <h3 className="text-4xl font-bold text-gray-900">Who We Are</h3>
+        </div>
+
+        <div>
+          <p className="leading-relaxed text-gray-600">
+            Vaayu Aircon designs and manufactures energy-efficient hybrid air cooling systems for
+            commercial, industrial, and institutional spaces. Our solutions help businesses reduce
+            electricity consumption, improve air quality, and lower operating costs compared to
+            traditional air conditioning.
+          </p>
+
+          <p className="mt-7 leading-relaxed text-gray-600">
+            With over 10 years of engineering expertise, we have delivered reliable cooling systems
+            across factories, warehouses, offices, schools, and public facilities throughout India.
+            Our in-house team focuses on performance, durability, and sustainable design to meet
+            demanding real-world conditions.
+          </p>
+
+          <p className="mt-7 leading-relaxed text-gray-600">
+            Unlike conventional AC systems that consume high amounts of energy and recirculate
+            indoor air, Vaayu’s hybrid technology provides fresh-air circulation with 20 degree
+            temperature difference while using up to 80% less power. This makes our systems a
+            smarter, more sustainable alternative for large spaces.
+          </p>
+        </div>
+      </div>
     </section>
   );
 }
