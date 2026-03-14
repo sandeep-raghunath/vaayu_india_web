@@ -19,10 +19,10 @@ export default function Home() {
   const { openModal } = useModal();
   const supportCardsData = [
     {
-      title: "Not Happy? We're Here To Fix It.",
+      title: "Need Help Choosing the Right Cooling System?",
       description:
-        "Let us know what went wrong — our support team is ready to resolve your issue quickly and fairly.",
-      button: "Report a Problem",
+        "Talk to our cooling engineers for expert guidance, system selection, and customized solutions for your space.Let us know what went wrong — our support team is ready to resolve your issue quickly and fairly.",
+      button: "Get a Free Cooling Assessment",
       bg: "bg-gray-50",
       text: "text-black",
       btnStyle: "bg-primary text-white hover:bg-primary-700",
@@ -31,10 +31,10 @@ export default function Home() {
       },
     },
     {
-      title: "Need Guidance? Talk To Experts",
+      title: "Already Using Vaayu? We’re Here to Help",
       description:
-        "Our experts are here to help you choose the right system, solve technical questions, or customize a solution for your space.",
-      button: "Speak to an Expert",
+        "Our support team quickly resolves service requests, maintenance issues, and technical questions.",
+      button: "Contact Support",
       bg: "bg-primary-700",
       text: "text-white",
       btnStyle: "bg-white text-black hover:bg-gray-200 border border-transparent",
@@ -43,10 +43,10 @@ export default function Home() {
       },
     },
     {
-      title: "Become A dealer",
+      title: "Become a Vaayu Dealer",
       description:
-        "Whether you're curious about pricing, installation, or compatibility — we’re just one form away.",
-      button: "Submit Your Query",
+        "Partner with us to offer energy-efficient cooling solutions and grow your business with a trusted brand.",
+      button: "Apply for Dealership",
       bg: "bg-gray-50",
       text: "text-black",
       btnStyle: "bg-primary text-white hover:bg-primary-700",
@@ -67,9 +67,8 @@ export default function Home() {
       <Impact />
       <Partners />
       <WhyVaayu
-        heading="Why Vaayu? Our Chill Changes Things."
-        description="It's not just about feeling cool, it's about protecting our world — We're
-            here to save resources and shrink our carbon footprint for generations to come."
+        heading="Why Choose Vaayu Cooling Systems"
+        description="Vaayu delivers energy-efficient hybrid air-cooling solutions designed to reduce operating costs, improve air quality, and support sustainable performance in commercial and industrial spaces."
         cardData={WHY_VAAYU_CARD_DATA}
         animationProps={{ initial: true, whileInView: true, viewport: { once: true, amount: 0.3 } }}
       />

@@ -18,7 +18,9 @@ export default function CustomApplications() {
           viewport={{ once: true, amount: 0.3 }}
         >
           <h2 className="mb-10 text-3xl leading-snug font-medium text-black sm:text-4xl md:text-5xl">
-            One Product. Customized <br /> For Hundreds Of <br /> Applications.
+            One Cooling System.
+            <br />
+            Multiple Applications.
           </h2>
         </motion.div>
         {/* Right Image */}
@@ -69,9 +71,10 @@ export default function CustomApplications() {
           viewport={{ once: true, amount: 0.3 }}
         >
           <p className="max-w-full text-justify text-base leading-relaxed text-black sm:max-w-lg sm:text-lg">
-            Vaayu effortlessly fits into variegated settings where air quality and sustainability
-            are of utmost importance, ranging from food processing facilities and textile
-            manufacturing plants to coaching centers and hospitality venues. Simply, easy to buy!
+            Vaayu hybrid air cooling systems are designed to deliver efficient and reliable cooling
+            across a wide range of commercial and industrial environments. With flexible
+            configurations and scalable capacity, one system can be customized to suit different
+            space sizes and cooling needs.
           </p>
           <motion.div
             className="mt-6 self-start sm:mt-0 sm:self-end"

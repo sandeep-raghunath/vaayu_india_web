@@ -37,18 +37,19 @@ export default function Efficiency() {
           transition={{ duration: 1.5, ease: "easeOut" }}
         >
           <h2 className="mb-3 text-xl leading-snug font-medium text-black sm:text-3xl md:text-4xl">
-            High Cooling Efficiency, <br /> Lower Energy Bills
+            High Cooling Efficiency. <br />
+            Lower Energy Bills.
           </h2>
           <p className="mb-6 text-sm leading-snug text-black sm:text-lg md:text-2xl">
-            Experience superior comfort with Vaayu Aircon, your specialist in high-efficiency
-            cooling solutions. Our advanced technology, centered around innovative Air Handling
-            Units (AHUs) and Air Washers, delivers powerful cooling while significantly reducing
-            power consumption.
+            Vaayu provides <strong>energy-efficient air cooling systems </strong>designed to keep
+            large spaces cool while using significantly less electricity than traditional air
+            conditioners. Our solutions deliver fresh air, consistent performance, and lower
+            operating costs for commercial and industrial environments.
           </p>
 
-          <p className="mb-3 text-sm leading-relaxed text-black sm:text-lg md:text-2xl">
-            Our product range includes:
-          </p>
+          <h3 className="mb-3 text-sm leading-relaxed text-black sm:text-lg md:text-2xl">
+            Our Cooling Solutions:
+          </h3>
 
           <ul className="mb-6 space-y-4 sm:space-y-8">
             <li className="border-b border-gray-200 pb-2">
@@ -56,7 +57,7 @@ export default function Efficiency() {
                 Single Stage Evaporative Cooling
               </p>
               <p className="text-xs text-black sm:text-base">
-                For reliable and cost-effective performance.
+                Reliable and cost-effective cooling for everyday industrial and commercial use.
               </p>
             </li>
             <li className="border-b border-gray-200 pb-2">
@@ -64,29 +65,32 @@ export default function Efficiency() {
                 Dual Stage Evaporative Cooling
               </p>
               <p className="text-xs text-black sm:text-base">
-                Offering maximum cooling efficiency and enhanced comfort.
+                Enhanced cooling performance with higher efficiency for hotter climates and larger
+                spaces.
               </p>
             </li>
             <li className="border-b border-gray-200 pb-2">
               <p className="text-sm font-bold text-black sm:text-lg">Hybrid Air Washer</p>
               <p className="text-xs text-black sm:text-base">
-                A state-of-the-art system combining technologies for optimal performance.
+                Advanced hybrid technology that combines powerful cooling with low energy
+                consumption and improved air quality.
               </p>
             </li>
             <li className="border-b border-gray-200 pb-2">
               <p className="text-sm font-bold text-black sm:text-lg">
-                Treated Fresh Air (TFAs) &amp; Fresh Air Handling Units (FAHUs)
+                Treated Fresh Air (TFA) &amp; Fresh Air Handling Units (FAHU)
               </p>
               <p className="text-xs text-black sm:text-base">
-                Designed to deliver 100% fresh, clean, and cool air.
+                Designed to supply <strong>100% fresh, clean, and cool air,</strong> these systems
+                improve ventilation while maintaining comfortable indoor temperatures for large
+                commercial and industrial spaces.
               </p>
             </li>
           </ul>
 
           <p className="mb-4 text-xs leading-normal text-black sm:text-base md:text-base">
-            By leveraging these systems, you can enjoy a perfectly cool environment without worrying
-            about high electricity costs. Choose Vaayu Aircon for smarter cooling and enjoy
-            noticeably lower energy bills
+            With Vaayu’s energy-efficient cooling solutions, you get reliable performance, fresh air
+            circulation, and significantly lower electricity costs.
           </p>
 
           <button

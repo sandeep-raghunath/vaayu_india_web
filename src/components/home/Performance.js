@@ -18,12 +18,15 @@ export default function Performance() {
               Performance &amp; <br /> Sustainability
             </h2>
             <p className="text-justify text-sm leading-relaxed text-black sm:text-base md:text-lg">
-              Vaayu Aircon delivers high-performance cooling engineered for exceptional energy
-              efficiency. This ensures optimal comfort while significantly reducing electricity
-              consumption. Committed to sustainability, the systems utilize eco-friendly
-              refrigerants to minimize environmental impact. In a crux, Vaayu offers a powerful and
-              responsible cooling solution with a lower carbon footprint thereby combining high
-              value products and services.
+              Vaayu designs <strong>high-performance hybrid air cooling systems </strong>that
+              deliver powerful cooling while using significantly less electricity than traditional
+              air conditioners. Our solutions help businesses lower energy costs, improve air
+              quality, and reduce their environmental impact.
+              <br />
+              <br />
+              Built for Indian conditions, every system is engineered for
+              <strong> reliability, efficiency, and long-term savings</strong> — making Vaayu a
+              smart and sustainable choice for commercial and industrial spaces.
             </p>
           </motion.div>
 

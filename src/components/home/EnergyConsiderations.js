@@ -44,7 +44,7 @@ export default function EnergyConsiderations() {
           viewport={{ once: true, amount: 0.3 }}
         >
           <h2 className="line- relative z-10 text-3xl font-[500] text-black md:text-5xl">
-            Elevated Cooling <br /> Energy Considerations
+            Industrial & Commercial Cooling Solutions
           </h2>
           <div className="relative mt-6 h-auto w-full max-w-[500px] md:h-[400px]">
             {/* Airflow animated gradient behind the image */}
@@ -93,10 +93,15 @@ export default function EnergyConsiderations() {
           viewport={{ once: true, amount: 0.3 }}
         >
           <p className="mb-6 text-justify text-xl leading-relaxed text-black">
-            At Vaayu Aircool, we create fresh air-based cooling systems that strike a balance
-            between environmental responsibility, energy efficiency, and performance. Our innovative
-            technology is revolutionizing what it means to effectively cool data centers, industrial
-            units, archival rooms, and other public as well as private spaces.
+            At Vaayu Aircool, we design and manufacture hybrid air cooling systems that cool large
+            areas while using much less electricity than traditional air conditioners. Our systems
+            bring in fresh air, lower energy bills, and provide reliable cooling for everyday
+            operations.
+            <br />
+            <br />
+            Whether it’s a factory, warehouse, commercial building, school, or public facility,
+            Vaayu cooling solutions are built to deliver consistent performance with lower running
+            costs.
           </p>
           <motion.button
             className="bg-primary w-full max-w-[144px] rounded-full px-6 py-2 text-sm text-white transition md:w-36"

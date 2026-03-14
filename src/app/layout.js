@@ -15,8 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Vaayu AHU innovative",
-  description: "vaayuindia.com",
+  title: "Energy Saving Air Coolers for Industrial & Commercial Use | Vaayu",
+  description:
+    "Vaayu designs hybrid air cooling systems that reduce energy costs by up to 80%. Ideal for factories, warehouses, and commercial spaces. Book a free consultation.",
 };
 
 export default function RootLayout({ children }) {
