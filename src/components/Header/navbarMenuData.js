@@ -43,6 +43,12 @@ const navbarMenuData = [
     newTab: false,
   },
   {
+    id: 7,
+    title: "Blog",
+    path: "/blog",
+    newTab: false,
+  },
+  {
     id: 6,
     title: "Contact Us",
     path: "/contactus",
