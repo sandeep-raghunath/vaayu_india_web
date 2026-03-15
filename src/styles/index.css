@@ -3,6 +3,8 @@ layer(base);
 
 @import 'tailwindcss';
 
+@plugin '@tailwindcss/typography';
+
 @theme {
   --breakpoint-*: initial;
   --breakpoint-xs: 450px;
