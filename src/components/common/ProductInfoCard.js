@@ -36,7 +36,7 @@ export default function ProductInfoCard(props) {
       <div className="flex items-start justify-between text-white">
         {/* Left Side */}
         <div className="flex-1 pr-4">
-          <p className="text-4xl leading-tight font-bold">{leftTitle}</p>
+          <p className="text-3xl leading-tight font-bold">{leftTitle}</p>
           <p className="mt-1 text-sm text-white/80">{leftSubtitle}</p>
         </div>
 
@@ -45,7 +45,7 @@ export default function ProductInfoCard(props) {
 
         {/* Right Side */}
         <div className="flex-1 pl-4 text-right">
-          <p className="text-4xl leading-tight font-bold">{rightTitle}</p>
+          <p className="text-3xl leading-tight font-bold">{rightTitle}</p>
           <p className="mt-1 text-sm text-white/80">{rightSubtitle}</p>
         </div>
       </div>

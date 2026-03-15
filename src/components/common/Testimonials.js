@@ -65,8 +65,8 @@ export default function Testimonials() {
             What Our Clients Say
           </h2>
           <p className="text-justify text-lg leading-relaxed text-gray-700">
-            From manufacturing giants to educational institutions, our clients rely on Vaayu to
-            deliver sustainable cooling solutions that perform.
+            Vaayu systems power reliable, energy-efficient cooling for factories, institutions, and
+            commercial facilities across India.
           </p>
         </motion.div>
 

@@ -87,7 +87,7 @@ export default function WhyVaayu(props) {
                   />
                 </div>
                 <h3 className="mb-2 text-lg font-bold">{data.title}</h3>
-                <p className="text-justify text-sm text-white/80">{data.subtitle}</p>
+                <p className="text-justify text-sm hyphens-auto text-white/80">{data.subtitle}</p>
               </motion.div>
             );
           })}

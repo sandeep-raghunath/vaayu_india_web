@@ -43,10 +43,10 @@ export default function Hero() {
         transition={{ duration: 1 }}
         variants={animationVariants}
       >
-        <h1 className="font-500 text-[32px] leading-tight text-black sm:text-[40px] lg:text-[58px]">
-          Cool Innovation
+        <h1 className="font-500 text-[15px] leading-tight text-black sm:text-[23px] lg:text-[41px]">
+          Smart Air Cooling Systems That
           <br />
-          Efficient <span className="font-serif italic">Sustainability</span>
+          Cut Energy Costs by Up to 80%
         </h1>
 
         <motion.button
@@ -102,7 +102,9 @@ export default function Hero() {
           </div>
           {/* Right Content */}
           <div className="flex flex-col self-end-safe p-6">
-            <p className="text-lg leading-snug font-bold text-white">80% Slash On Energy Bills</p>
+            <p className="text-lg leading-snug font-bold text-white">
+              80% Reduction in Energy Consumption
+            </p>
             <p className="mt-2 text-sm text-white/90">Your cool energy efficient Choice</p>
             <a
               href="#"
@@ -146,8 +148,9 @@ export default function Hero() {
             />
           </div>
           <div className="text-center">
-            <div className="text-[38px] leading-none font-[500] text-white">10M+</div>
-            <p className="text-[20px] font-[500] text-white/90">Energy Warrior Customers</p>
+            <p className="text-[16px] font-[500] text-white/90">Trusted by</p>
+            <div className="text-[30px] leading-none font-[500] text-white">10M+</div>
+            <p className="text-[16px] font-[500] text-white/90">Customers Across India</p>
             <a
               href="#"
               className="mt-1 inline-block text-sm font-[400] text-white/95 underline underline-offset-4"
@@ -162,7 +165,7 @@ export default function Hero() {
           <div className="text-primary mb-6 grid h-15 w-15 place-items-center rounded-full bg-white text-[12px] font-semibold">
             CO₂
           </div>
-          <p className="font-bold text-white">Positive Carbon Footprints Reduction</p>
+          <p className="font-bold text-white">Significant Carbon Footprint Reduction</p>
           <p className="mt-3 text-sm text-white">Acclaimed reduction in carbon emissions by 80%.</p>
         </div>
       </motion.div>

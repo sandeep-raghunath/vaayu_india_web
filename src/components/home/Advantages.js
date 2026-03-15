@@ -4,37 +4,115 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 
+// Helper function to extract text content from JSX elements
+const extractTextFromJSX = (element) => {
+  if (typeof element === "string") return element;
+  if (!element) return "";
+  if (Array.isArray(element)) {
+    return element.map(extractTextFromJSX).join("");
+  }
+  if (element.props && element.props.children) {
+    if (Array.isArray(element.props.children)) {
+      return element.props.children.map(extractTextFromJSX).join("");
+    }
+    return extractTextFromJSX(element.props.children);
+  }
+  return "";
+};
+
+// Helper function to truncate JSX while preserving formatting
+const truncateJSX = (element, wordLimit = 16) => {
+  let wordCount = 0;
+  const maxWords = wordLimit;
+
+  const processElement = (el) => {
+    if (wordCount >= maxWords) return null;
+
+    if (typeof el === "string") {
+      const words = el.split(" ");
+      const availableWords = maxWords - wordCount;
+      const truncatedWords = words.slice(0, availableWords);
+      wordCount += truncatedWords.length;
+      return truncatedWords.join(" ");
+    }
+
+    if (Array.isArray(el)) {
+      return el.map(processElement).filter(Boolean);
+    }
+
+    if (el?.type) {
+      const children = el.props?.children;
+      if (!children) return null;
+
+      const processedChildren = Array.isArray(children)
+        ? children.map(processElement).filter(Boolean)
+        : processElement(children);
+
+      if (
+        !processedChildren ||
+        (Array.isArray(processedChildren) && processedChildren.length === 0)
+      ) {
+        return null;
+      }
+
+      return <el.type {...el.props}>{processedChildren}</el.type>;
+    }
+
+    return el;
+  };
+
+  return processElement(element);
+};
+
 export default function Advantages() {
   const advantages = [
     {
       image: "/images/home/advantages/advantage1.png",
-      title: "Vaayu Technology for Pure, Fresh Air Circulation",
-      desc: "Experience truly fresh air with every breath. Unlike commercial ACs that simply recirculate stale indoor air, our Shudh Vaayu technology ensures a constant supply of purified, outdoor air, filtered and cooled for your comfort. This not only improves air quality but also promotes a healthier indoor environment for you and your loved ones.",
+      title: "Fresh & Clean Air Circulation",
+      desc: (
+        <>
+          Unlike traditional ACs that reuse the same indoor air, Vaayu systems bring in{" "}
+          <strong>fresh outdoor air,</strong> improving air quality and creating a healthier
+          environment for people and equipment.
+        </>
+      ),
     },
     {
       image: "/images/home/advantages/advantage2.png",
-      title: "High Energy Efficiency That Slash Your Energy Bills",
-      desc: "Revolutionize your energy consumption with our advanced systems. By leveraging state-of-the-art dual stage evaporative cooling technology, we drastically reduce your energy usage compared to traditional cooling methods, helping you save money while minimizing environmental impact.",
+      title: "Up to 80% Lower Energy Consumption",
+      desc: (
+        <>
+          Our hybrid cooling technology uses significantly less electricity than conventional air
+          conditioners, helping businesses <strong>reduce energy bills and operating costs</strong>{" "}
+          every month.
+        </>
+      ),
     },
     {
       image: "/images/home/advantages/advantage3.png",
-      title: "Adaptive Features With Consistent Comfort Year-Round",
-      desc: "Our intelligent cooling solutions automatically adapt to changing environmental conditions, ensuring consistent comfort throughout the year. Whether it's peak summer or the monsoon season, you enjoy optimal cooling and air quality, customized for your space.",
+      title: "Reliable Cooling in All Conditions",
+      desc: (
+        <>
+          Designed for Indian climates, Vaayu systems deliver{" "}
+          <strong>consistent cooling performance</strong> even in high temperatures, making them
+          ideal for factories, warehouses, and commercial spaces.
+        </>
+      ),
     },
     {
       image: "/images/home/advantages/advantage4.png",
-      title: "Robust Build And All-Weather Guard",
-      desc: "Engineered with durability in mind, our products are built to withstand harsh weather conditions and require minimal maintenance. The robust construction and weather-resistant materials ensure reliable performance and long-lasting value, year after year.",
+      title: "Robust Build & All-Weather Protection",
+      desc: "Built with industrial-grade materials and tested for extreme conditions, our cooling systems are designed to perform reliably in heat, rain, dust, and humidity. Backed by proven engineering and years of field experience, our solutions ensure long-lasting performance with minimal maintenance — giving you peace of mind in every season.",
     },
     {
       image: "/images/home/advantages/advantage5.png",
-      title: "Carbon Footprint Reduction",
-      desc: "Contribute to a greener planet by choosing our eco-friendly cooling technologies. Our systems are designed to significantly lower your carbon footprint, using sustainable methods that reduce greenhouse gas emissions and conserve energy resources.",
+      title: "Energy-Efficient & Low Carbon Footprint",
+      desc: "Our eco-conscious cooling solutions are engineered to reduce energy consumption without compromising performance. By using advanced airflow design and high-efficiency components, we help businesses and homes lower their carbon footprint and operational costs — contributing to a greener, more sustainable future.",
     },
     {
       image: "/images/home/advantages/advantage6.png",
-      title: "Whisper-Quiet Cooling",
-      desc: "Enjoy a peaceful environment thanks to our whisper-quiet cooling systems. Designed for silent operation, our solutions let you work, relax, or sleep without disruptive background noise, making comfort truly effortless.",
+      title: "Whisper-Quiet Cooling Comfort",
+      desc: "Enjoy powerful cooling with near-silent operation. Our systems are designed using noise-reduction technology and precision engineering to maintain a calm, comfortable environment — ideal for homes, offices, hospitals, and commercial spaces where silence matters.",
     },
   ];
 
@@ -53,7 +131,7 @@ export default function Advantages() {
   return (
     <section className="bg-white px-6 py-20 md:px-12">
       <div className="mx-auto mb-12 max-w-6xl">
-        <h2 className="mb-4 text-4xl font-bold text-black">Vaayu Advantages</h2>
+        <h2 className="mb-4 text-4xl font-bold text-black">Why Choose Vaayu Cooling Systems</h2>
         <p className="text-xl text-black">The Smart and Sustainable Choice.</p>
       </div>
 
@@ -98,7 +176,7 @@ export default function Advantages() {
                   {adv.title}
                 </h3>
                 <div className="text-justify text-sm leading-relaxed text-black">
-                  {isExpanded ? adv.desc : adv.desc.split(" ").slice(0, 16).join(" ")}
+                  {isExpanded ? adv.desc : truncateJSX(adv.desc, 16)}
                   {!isExpanded && "..."}
                   <button
                     type="button"

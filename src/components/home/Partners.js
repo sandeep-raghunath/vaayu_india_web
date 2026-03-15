@@ -47,10 +47,13 @@ export default function Partners() {
       <div className="mx-auto max-w-full">
         {/* Heading */}
         <div className="mb-12 max-w-3xl px-6 md:px-20">
-          <h2 className="mb-4 text-4xl leading-snug font-medium text-black">The A-List Of Cool.</h2>
+          <h2 className="mb-4 text-4xl leading-snug font-medium text-black">
+            Trusted by Leading Brands & Institutions
+          </h2>
           <p className="text-justify text-lg leading-relaxed text-black">
-            From agile innovators to market leaders, our partners have one thing in common: a
-            commitment to a better-cooled future for everyone, everywhere.
+            Top companies, government organizations, and industrial facilities across India trust
+            Vaayu’s energy-efficient cooling systems. Our solutions power reliable, cost-effective
+            cooling for diverse environments at scale.
           </p>
         </div>
 
