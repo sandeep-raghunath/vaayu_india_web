@@ -3,6 +3,7 @@ import React, { useState } from "react";
 
 export default function CareerOpenRoles() {
   const departments = ["All Departments", "Engineering", "Marketing", "Sales", "HR", "Design"];
+
   const locations = [
     "All Locations",
     "Mumbai",
@@ -18,20 +19,53 @@ export default function CareerOpenRoles() {
   ];
 
   const jobs = [
-    { title: "Product Development", dept: "Engineering", type: "Full-Time", location: "Mumbai" },
-    { title: "UI/UX Designer", dept: "Design", type: "Full-Time", location: "Bangalore" },
-    { title: "Sales Executive", dept: "Sales", type: "Full-Time", location: "Delhi" },
-    { title: "HR Specialist", dept: "HR", type: "Part-Time", location: "Pune" },
-    { title: "Marketing Manager", dept: "Marketing", type: "Full-Time", location: "Hyderabad" },
-    { title: "Backend Engineer", dept: "Engineering", type: "Full-Time", location: "Chennai" },
-    { title: "Frontend Developer", dept: "Engineering", type: "Internship", location: "Kolkata" },
-    { title: "Recruitment Associate", dept: "HR", type: "Full-Time", location: "Ahmedabad" },
-    { title: "Graphic Designer", dept: "Design", type: "Full-Time", location: "Jaipur" },
-    { title: "Business Development Manager", dept: "Sales", type: "Full-Time", location: "Indore" },
+    {
+      title: "Draughtsman (Project Engineer)",
+      dept: "Engineering",
+      type: "Full-Time",
+      location: "Mumbai",
+      skills_Required: [
+        "AutoCAD (mandatory)",
+        "HVAC / MEP drawings knowledge preferred",
+        "Preparation of GA, detailed & as-built drawings",
+        "Site visits for measurements and field verification",
+        "Ability to generate leads & visit sites",
+        "Understand technical requirements of clients",
+        "Preparing HVAC Ducting drawings/models",
+        "Presenting drawing/models to clients",
+        "Ducting drawings",
+        "Quotation (Excel) formations",
+      ],
+    },
+    {
+      title: "Sales Engineer",
+      dept: "Sales",
+      type: "Full-Time",
+      location: "Indore",
+      skills_Required: [
+        "Identify and develop new business opportunities",
+        "Build and manage strong client relationships",
+        "Present HVAC solutions and submit proposals to customers",
+        "Support market expansion and brand presence",
+        "Execute consultative/solution-based selling",
+        "Generate and convert leads into sales",
+        "Ready to travel to sites across India",
+        "Able to take measurements on site and communicate with the design team",
+      ],
+    },
   ];
 
   const [selectedDept, setSelectedDept] = useState("All Departments");
   const [selectedLoc, setSelectedLoc] = useState("All Locations");
+
+  const [expandedJobs, setExpandedJobs] = useState({});
+
+  const toggleReadMore = (index) => {
+    setExpandedJobs((prev) => ({
+      ...prev,
+      [index]: !prev[index],
+    }));
+  };
 
   const filteredJobs = jobs.filter(
     (job) =>
@@ -44,6 +78,7 @@ export default function CareerOpenRoles() {
       <h2 className="text-center text-3xl font-bold text-gray-900 md:text-4xl">
         Open Roles At Vaayu
       </h2>
+
       <p className="mx-auto mt-4 max-w-2xl text-center text-gray-600">
         We&apos;re looking for mission-driven individuals who care about clean technology, climate,
         and meaningful innovation.
@@ -73,19 +108,44 @@ export default function CareerOpenRoles() {
       </div>
 
       {/* Job Listings */}
-      <div className="mt-10 space-y-6">
+      <div className="mt-10 space-y-8">
         {filteredJobs.length > 0 ? (
           filteredJobs.map((job, idx) => (
-            <div key={idx} className="flex items-center justify-between rounded-lg border-b pb-4">
-              <div>
-                <h3 className="font-semibold text-gray-800">{job.title}</h3>
-                <p className="text-sm text-gray-500">
-                  {job.dept} | {job.type} | {job.location}
-                </p>
+            <div key={idx} className="rounded-xl border bg-white p-6 shadow-sm">
+              <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold text-gray-800">{job.title}</h3>
+
+                  <p className="mt-1 text-sm text-gray-500">
+                    {job.dept} | {job.type} | {job.location}
+                  </p>
+
+                  {/* Read More Button */}
+                  <button
+                    onClick={() => toggleReadMore(idx)}
+                    className="mt-4 text-sm font-medium text-blue-600 hover:underline"
+                  >
+                    {expandedJobs[idx] ? "Show Less" : "Read More"}
+                  </button>
+
+                  {/* Hidden initially, shown on click */}
+                  {expandedJobs[idx] && (
+                    <div className="mt-5">
+                      <h4 className="mb-3 font-medium text-gray-800">Skills Required:</h4>
+
+                      <ul className="list-disc space-y-2 pl-6 text-sm text-gray-600">
+                        {job.skills_Required.map((skill, skillIdx) => (
+                          <li key={skillIdx}>{skill}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </div>
+
+                <button className="rounded-full bg-black px-5 py-2 text-sm font-medium text-white hover:bg-gray-800">
+                  Apply Now
+                </button>
               </div>
-              <button className="rounded-full bg-black px-5 py-2 text-sm font-medium text-white hover:bg-gray-800">
-                Apply Now
-              </button>
             </div>
           ))
         ) : (
