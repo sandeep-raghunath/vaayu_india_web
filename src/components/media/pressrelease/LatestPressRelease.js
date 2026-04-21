@@ -6,51 +6,111 @@ import { useState } from "react";
 const services = [
   {
     alt: "latestpressrelease1",
-    img: "/images/pressrelease/latestpressrelease1.png",
+    img: "/images/pressrelease/005.jpg",
   },
   {
     alt: "latestpressrelease1",
-    img: "/images/pressrelease/latestpressrelease1.png",
+    img: "/images/pressrelease/006.jpg",
   },
   {
     alt: "latestpressrelease1",
-    img: "/images/pressrelease/latestpressrelease1.png",
+    img: "/images/pressrelease/007.jpg",
   },
   {
     alt: "latestpressrelease1",
-    img: "/images/pressrelease/latestpressrelease1.png",
+    img: "/images/pressrelease/008.jpg",
   },
   {
     alt: "latestpressrelease1",
-    img: "/images/pressrelease/latestpressrelease1.png",
+    img: "/images/pressrelease/009.jpg",
   },
   {
     alt: "latestpressrelease1",
-    img: "/images/pressrelease/latestpressrelease1.png",
+    img: "/images/pressrelease/010.jpg",
   },
   {
     alt: "latestpressrelease1",
-    img: "/images/pressrelease/latestpressrelease1.png",
+    img: "/images/pressrelease/011.jpg",
   },
   {
     alt: "latestpressrelease1",
-    img: "/images/pressrelease/latestpressrelease1.png",
+    img: "/images/pressrelease/012.jpg",
   },
   {
     alt: "latestpressrelease1",
-    img: "/images/pressrelease/latestpressrelease1.png",
+    img: "/images/pressrelease/013.jpg",
   },
   {
     alt: "latestpressrelease1",
-    img: "/images/pressrelease/latestpressrelease1.png",
+    img: "/images/pressrelease/014.jpg",
   },
   {
     alt: "latestpressrelease1",
-    img: "/images/pressrelease/latestpressrelease1.png",
+    img: "/images/pressrelease/027.jpg",
   },
   {
     alt: "latestpressrelease1",
-    img: "/images/pressrelease/latestpressrelease1.png",
+    img: "/images/pressrelease/028.jpg",
+  },
+  {
+    alt: "latestpressrelease1",
+    img: "/images/pressrelease/029.jpg",
+  },
+  {
+    alt: "latestpressrelease1",
+    img: "/images/pressrelease/030.jpg",
+  },
+  {
+    alt: "latestpressrelease1",
+    img: "/images/pressrelease/031.jpg",
+  },
+  {
+    alt: "latestpressrelease1",
+    img: "/images/pressrelease/032.jpg",
+  },
+  {
+    alt: "latestpressrelease1",
+    img: "/images/pressrelease/033.jpg",
+  },
+  {
+    alt: "latestpressrelease1",
+    img: "/images/pressrelease/034.jpg",
+  },
+  {
+    alt: "latestpressrelease1",
+    img: "/images/pressrelease/035.jpg",
+  },
+  {
+    alt: "latestpressrelease1",
+    img: "/images/pressrelease/036.jpg",
+  },
+  {
+    alt: "latestpressrelease1",
+    img: "/images/pressrelease/037.jpg",
+  },
+  {
+    alt: "latestpressrelease1",
+    img: "/images/pressrelease/038.jpg",
+  },
+  {
+    alt: "latestpressrelease1",
+    img: "/images/pressrelease/039.jpg",
+  },
+  {
+    alt: "latestpressrelease1",
+    img: "/images/pressrelease/040.jpg",
+  },
+  {
+    alt: "latestpressrelease1",
+    img: "/images/pressrelease/042.jpg",
+  },
+  {
+    alt: "latestpressrelease1",
+    img: "/images/pressrelease/043.jpg",
+  },
+  {
+    alt: "latestpressrelease1",
+    img: "/images/pressrelease/044.jpg",
   },
 ];
 

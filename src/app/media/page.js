@@ -31,6 +31,79 @@ export default function MediaAwardsPage() {
             image: "/images/awards/team.png",
             caption: "Our team being recognized at International Cooling Expo 2024",
           },
+          {
+            image: "/images/awards/015.jpg",
+            caption:
+              "Vaayu Founders Meet Gem Of India 'The A. R. Rehman' Invited For Exploring Vaayu Technology",
+          },
+          {
+            image: "/images/awards/016.jpg",
+            caption: "Our team being recognized at International Cooling Expo 2024",
+          },
+          {
+            image: "/images/awards/017.jpg",
+            caption: "Our team being recognized at International Cooling Expo 2024",
+          },
+          {
+            image: "/images/awards/018.jpg",
+            caption: "Our team being recognized at International Cooling Expo 2024",
+          },
+          {
+            image: "/images/awards/019.jpg",
+            caption: "Our team being recognized at International Cooling Expo 2024",
+          },
+          {
+            image: "/images/awards/020.jpg",
+            caption: "Our team being recognized at International Cooling Expo 2024",
+          },
+          {
+            image: "/images/awards/021.jpg",
+            caption: "Our team being recognized at International Cooling Expo 2024",
+          },
+          {
+            image: "/images/awards/022.jpg",
+            caption: "Our team being recognized at International Cooling Expo 2024",
+          },
+          {
+            image: "/images/awards/023.jpg",
+            caption: "Our team being recognized at International Cooling Expo 2024",
+          },
+          {
+            image: "/images/awards/024.jpg",
+            caption: "Our team being recognized at International Cooling Expo 2024",
+          },
+          {
+            image: "/images/awards/025.jpg",
+            caption: "Our team being recognized at International Cooling Expo 2024",
+          },
+          {
+            image: "/images/awards/026.jpg",
+            caption: "Our team being recognized at International Cooling Expo 2024",
+          },
+          {
+            image: "/images/awards/023.jpg",
+            caption: "Our team being recognized at International Cooling Expo 2024",
+          },
+          {
+            image: "/images/awards/050.jpg",
+            caption: "Our team being recognized at International Cooling Expo 2024",
+          },
+          {
+            image: "/images/awards/051.jpg",
+            caption: "Our team being recognized at International Cooling Expo 2024",
+          },
+          {
+            image: "/images/awards/052.jpg",
+            caption: "Our team being recognized at International Cooling Expo 2024",
+          },
+          {
+            image: "/images/awards/053.jpg",
+            caption: "Our team being recognized at International Cooling Expo 2024",
+          },
+          {
+            image: "/images/awards/054.jpg",
+            caption: "Our team being recognized at International Cooling Expo 2024",
+          },
         ]}
       />
     </main>
